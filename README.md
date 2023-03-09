@@ -1,4 +1,4 @@
-# First Web
+# Website Project
 A simple practice website. Hope you enjoy this.
 
 ## General Info
