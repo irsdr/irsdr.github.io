@@ -2,11 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600&display=swap');
 
-*, *::before *::after{
+*,
+*::before *::after {
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     background-color: #171b23;
     color: #f8f8f8;
@@ -16,94 +17,113 @@ body{
     flex-direction: column;
 }
 
-header{
+header {
     max-width: 1200px;
     width: 100%;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     z-index: 999;
 }
 
-header .nav-bar ul{
+header .nav-bar ul {
     display: flex;
     padding-left: 0;
     justify-content: center;
     gap: 2rem 3rem;
 }
 
-header .nav-lang ul{
+header .nav-lang ul {
     display: flex;
     padding-left: 0;
     justify-content: center;
     gap: 2rem 3rem;
 }
 
-header nav ul li{
+header nav ul li {
     list-style-type: none;
-} 
+}
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     font-size: 1.05rem;
     font-weight: 500;
     color: #f8f8f8;
     border-radius: 999px;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
-header div h1{
+header nav ul li a:hover{
+    font-size: 1.25rem;
+    color: #fecc72;
+}
+
+header div h1 {
     font-family: 'Audiowide', cursive;
     font-size: 70px;
-    margin:auto;
+    margin: auto;
 }
 
-main{
+main {
     max-width: 1100px;
     width: 100%;
     margin-inline: auto;
-    padding: 2rem 4rem;
+    padding: 2rem;
     flex: 1;
 
     display: flex;
     align-items: center;
 }
 
-main article .description h1{
+main article .description h1 {
     font-size: 1rem;
     color: #fecc72;
 }
 
-main article .description h2{
+main article .description h2 {
     font-size: 3.5rem;
     margin-block: 1rem;
 }
 
-main article .description p{
+main article .description p {
     font-size: 1rem;
 }
 
-main article .sosmed h3{
-    text-align: center;
+#sosmed ul {
+    display: flex;
 }
 
-.sosmed ul li{
+#sosmed ul li {
     list-style-type: none;
-    text-align: center;
+    align-self: flex-start;
+    margin-right: 20px;
+}
+
+#sosmed ul li a img {
+    transition: all 0.2s ease-in-out;
+    /* text-align: center; */
+    width: 40px;
+}
+
+#sosmed ul li a img:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 aside {
     float: right;
-    padding-left: 0;
+    padding-left: 4rem;
     width: 100%;
 }
 
-aside article header h3{
+aside article header h3 {
     text-align: center;
     flex-grow: 1;
     color: #fecc72;
+    margin-bottom: 0px;
 }
 
 aside article .photo figure img {
@@ -113,17 +133,29 @@ aside article .photo figure img {
     border-radius: 100%;
     filter: brightness(50%);
     filter: contrast(80%);
+    display: block;
+    margin-top: 0px;
 }
 
-aside article .bio table{
+aside article .bio table {
     width: 100%;
 }
 
-aside article .bio table tr th, td{
+aside article .bio table tr th,
+td {
     font-size: 1rem;
-    text-align: center;
     text-align: left;
     padding-left: 10%;
+}
+
+aside article .bio table address tr
+td a{
+    transition: all 0.2s ease-in-out;
+}
+
+aside article .bio table address tr
+td a:hover{
+    font-size: 2rem;
 }
 
 footer {
@@ -132,20 +164,48 @@ footer {
     /* background-color: #fecc72; */
     text-align: center;
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
-@media  screen and (max-width:768px) {
-    header.navigation{
+@media screen and (max-width:768px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    header.navigation {
         flex-direction: column;
+    }
+
+    header.navigation .nav-bar ul {
+        flex-wrap: wrap;
     }
 
     main {
         flex-direction: column;
-        gap: 2rem;
+        padding: 1.5rem;
+        
     }
 
-    header.navigation .nav-bar ul{
-        flex-wrap: wrap;
+    main .content{
+        padding-bottom: 1.5rem;
+    }
+
+    aside{
+        padding-top: 1.5rem;
+    }
+
+    aside article .bio table tr th,
+    td {
+        font-size: 1rem;
+        text-align: left;
+        padding-left: 0%;
+    }
+
+    footer{
+        padding-left: 2rem;
+    }
+
+    footer p{
+        text-align: center;
     }
 }
