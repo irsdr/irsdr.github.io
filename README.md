@@ -15,4 +15,4 @@ to discuss what you would like to change. And as my reference to keep learning.
 
 ## License
 
-[MIT](https://github.com/sastro1119/Web-Project/blob/27d85f6a5f6a648e963c811437ed90f4ba335cf3/LICENSE)
+[MIT](https://github.com/irsdr/irsdr.github.io/blob/a401ef45ed15ddd40308dc3d8c13209cc1943946/LICENSE)
