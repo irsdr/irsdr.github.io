@@ -1,5 +1,5 @@
 <html lang="en">
-    <!-- href="https://drive.google.com/file/d/1F2o4maILiQgYjTyXoPRgbBPHh-7ymMQk/view?usp=drive_link" type="application/pdf" target="_blank" -->
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,16 +21,16 @@
                         Project
                     </a>
                     <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-                        <li class="dropdown_item-1" id="dropdownItem1">Patient Questionnaire</li>
+                        <li class="dropdown_item-1" id="dropdownItem1"><a href="https://quizp.000webhostapp.com/" target="_blank">Patient Questionnaire</a></li>
                     </ul>
                         <!-- Tambahkan elemen dropdown select -->
                         <!-- <select id="projectDropdown" style="display: none;" onchange="changeProject()">
                          <option value="patientQuestionnaire">Patient Questionnaire</option>
                         <!-- Tambahkan opsi lainnya jika diperlukan -->
-                        <!-- </select> -->
+                        </select>
                 </li>
-                <li><a href="#sosmed" id="contactHeader">Contact</a></li>
-                <li><a href="#about" id="aboutHeader">About</a></li>
+                <li><a href="https://drive.google.com/file/d/1F2o4maILiQgYjTyXoPRgbBPHh-7ymMQk/view?usp=drive_link" type="application/pdf" target="_blank"" id="resumeHeader">Resume</a></li>
+                <li><a href="#aboutMe" id="contactHeader">Contact</a></li>
             </ul>
         </nav>
         <nav class="nav-lang">
@@ -113,8 +113,8 @@
                     'homeHeader' : 'Beranda',
                     'portoHeader' : 'Proyek',
                     'dropdownItem1': 'Kuisioner Pasien',
+                    'resumeHeader' : 'Resume',
                     'contactHeader' : 'Kontak',
-                    'aboutHeader' : 'Tentang',
                     'greeting': '| Hai |',
                     'me' : 'Saya',
                     'welcome': '<em>"Welcome to my paradise. Where this sky so blue..."</em> (ekhm) Maaf.<br>Saya adalah mahasiswa rekam medis lulusan STIKES Bhakti Husada Mulia Madiun, yang tertarik di bidang Teknologi Informasi dan Komunikasi khususnya dibidang web development, cloud computing, analisis data, dll.<br> Dan tentu saja tertarik padamu juga.',
@@ -130,8 +130,8 @@
                     'homeHeader' : 'Home',
                     'portoHeader' : 'Project',
                     'dropdownItem1': 'Patient Questionnaire',
+                    'resumeHeader' : 'Resume',
                     'contactHeader' : 'Contact',
-                    'aboutHeader' : 'About',
                     'greeting': '| Hello |',
                     'me' : "I'm",
                     'welcome': '<em>"Welcome to my paradise. Where this sky so blue..."</em> (ekhm) Sorry.<br>I am a medical record student graduate from STIKES Bhakti Husada Mulia Madiun, with a keen interest in the field of Information Technology and Communication, particularly in web development, cloud computing, data analysis, etc.<br>And of course loving on you too.',
@@ -147,8 +147,8 @@
             
             document.getElementById('homeHeader').innerText = langElements[lang]['homeHeader'];
             document.getElementById('portoHeader').innerText = langElements[lang]['portoHeader'];
+            document.getElementById('resumeHeader').innerText = langElements[lang]['resumeHeader'];
             document.getElementById('contactHeader').innerText = langElements[lang]['contactHeader'];
-            document.getElementById('aboutHeader').innerText = langElements[lang]['aboutHeader'];
             document.getElementById('greeting').innerText = langElements[lang]['greeting'];
             document.getElementById('me').innerHTML = langElements[lang]['me'];
             document.getElementById('welcome').innerHTML = langElements[lang]['welcome'];
