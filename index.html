@@ -1,11 +1,11 @@
 <html lang="en">
-
+    <!-- href="https://drive.google.com/file/d/1F2o4maILiQgYjTyXoPRgbBPHh-7ymMQk/view?usp=drive_link" type="application/pdf" target="_blank" -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Project</title>
-    <link rel="stylesheet" href="https://storage.googleapis.com/irsdr-web/style/style.css">
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
@@ -15,16 +15,28 @@
         </div>
         <nav class="nav-bar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portofolio</a></li>
-                <li><a href="#sosmed">Contact</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#" id="homeHeader">Home</a></li>
+                <li class="dropdown dropdown-6">
+                    <a id="portoHeader">
+                        Project
+                    </a>
+                    <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
+                        <li class="dropdown_item-1" id="dropdownItem1">Patient Questionnaire</li>
+                    </ul>
+                        <!-- Tambahkan elemen dropdown select -->
+                        <!-- <select id="projectDropdown" style="display: none;" onchange="changeProject()">
+                         <option value="patientQuestionnaire">Patient Questionnaire</option>
+                        <!-- Tambahkan opsi lainnya jika diperlukan -->
+                        <!-- </select> -->
+                </li>
+                <li><a href="#sosmed" id="contactHeader">Contact</a></li>
+                <li><a href="#about" id="aboutHeader">About</a></li>
             </ul>
         </nav>
         <nav class="nav-lang">
             <ul>
-                <li><a href="#">IN</a></li>
-                <li><a href="#">EN</a></li>
+                <li><a href="#" onclick="changeLanguage('ID')">ID</a></li>
+                <li><a href="#" onclick="changeLanguage('EN')">EN</a></li>
             </ul>
         </nav>
     </header>
@@ -32,16 +44,13 @@
     <main>
         <article class="content">
             <section class="description">
-                <h1>| Hello |</h1>
-                <h2>I'm Muh. <span style="color:#fecc72">Irsyad</span> Asrori</h2>
-                <p>"Welcome to my paradise. Where this sky so blue..." (ekhm) Sorry... <br>
-                    I am a medical record student at STIKES Bhakti Husada Mulia Madiun,
-                    who has an interest in Information and Communication of Technology. <br>
-                    And of course loving on you too.
+                <h1 id="greeting">| Hello |</h1>
+                <h2> <span id="me" style="font-size: 1.5rem">I'm</span> Muh. <span style="color:#fecc72">Irsyad</span> Asrori</h2>
+                <p id="welcome"><em>"Welcome to my paradise. Where this sky so blue..."</em> (ekhm) Sorry.<br>I am a medical record student graduate from STIKES Bhakti Husada Mulia Madiun, with a keen interest in the field of Information Technology and Communication, particularly in web development, cloud computing, data analysis, etc.<br>And of course loving on you too.
                 </p>
             </section>
             <section id="sosmed">
-                <h3>Social Media :</h3>
+                <h3>Get in touch :</h3>
                 <ul>
                     <li><a href="https://www.facebook.com/MuhIrsyadAsrori/" target="_blank"><img alt="svgImg"
                                 src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9ImZpbGw6I0ZGRkZGRjsiPgogICAgPHBhdGggZD0iTTEyLDJDNi40NzcsMiwyLDYuNDc3LDIsMTJjMCw1LjAxMywzLjY5Myw5LjE1Myw4LjUwNSw5Ljg3NlYxNC42NUg4LjAzMXYtMi42MjloMi40NzR2LTEuNzQ5IGMwLTIuODk2LDEuNDExLTQuMTY3LDMuODE4LTQuMTY3YzEuMTUzLDAsMS43NjIsMC4wODUsMi4wNTEsMC4xMjR2Mi4yOTRoLTEuNjQyYy0xLjAyMiwwLTEuMzc5LDAuOTY5LTEuMzc5LDIuMDYxdjEuNDM3aDIuOTk1IGwtMC40MDYsMi42MjloLTIuNTg4djcuMjQ3QzE4LjIzNSwyMS4yMzYsMjIsMTcuMDYyLDIyLDEyQzIyLDYuNDc3LDE3LjUyMywyLDEyLDJ6Ij48L3BhdGg+Cjwvc3ZnPg==" /></a>
@@ -64,30 +73,30 @@
         <aside id="about">
             <article>
                 <header>
-                    <h3>About Me</h3>
+                    <h3 id="aboutMe">About Me</h3>
                 </header>
                 <section class="photo">
                     <figure>
-                        <img src="https://storage.googleapis.com/irsdr-web/img/irsyad.png" alt="Irsyad Photo">
+                        <img src="/img/irsyad.png" alt="Irsyad Photo">
                     </figure>
                 </section>
                 <section class="bio">
                     <table>
                         <tr>
-                            <th>Name</th>
+                            <th id="name">Name</th>
                             <td>: Muh. Irsyad Asrori</td>
                         </tr>
                         <tr>
-                            <th>Place of Birth</th>
+                            <th id="placeBirth">Place of Birth</th>
                             <td>: Ngawi</td>
                         </tr>
                         <address>
                             <tr>
-                                <th>Email</th>
+                                <th id="email">Email</th>
                                 <td>: <a href="mailto:sastrojendro1119@gmail.com" target="_blank" style="text-decoration: none; color: #f8f8f8;"> sastrojendro1119@gmail.com</a></td>
                             </tr>
                             <tr>
-                                <th>Telp. Number</th>
+                                <th id="number">Phone Number</th>
                                 <td>: <a href="https://wa.me/6285961129931" target="_blank" style="text-decoration: none; color: #f8f8f8;"> +6285961129931</a></td>
                             </tr>
                         </address>
@@ -96,6 +105,68 @@
             </article>
         </aside>
     </main>
+
+    <script>
+        function changeLanguage(lang) {
+            const langElements = {
+                'ID': {
+                    'homeHeader' : 'Beranda',
+                    'portoHeader' : 'Proyek',
+                    'dropdownItem1': 'Kuisioner Pasien',
+                    'contactHeader' : 'Kontak',
+                    'aboutHeader' : 'Tentang',
+                    'greeting': '| Hai |',
+                    'me' : 'Saya',
+                    'welcome': '<em>"Welcome to my paradise. Where this sky so blue..."</em> (ekhm) Maaf.<br>Saya adalah mahasiswa rekam medis lulusan STIKES Bhakti Husada Mulia Madiun, yang tertarik di bidang Teknologi Informasi dan Komunikasi khususnya dibidang web development, cloud computing, analisis data, dll.<br> Dan tentu saja tertarik padamu juga.',
+                    'sosmed': 'Hubungi saya :',
+                    'getInTouch': 'Get in touch :',
+                    'aboutMe' : 'Tentang Saya',
+                    'name' : 'Nama',
+                    'placeBirth' : 'Tempat Lahir',
+                    'email' : 'Email',
+                    'number' : 'Nomor Telp.'
+                },
+                'EN': {
+                    'homeHeader' : 'Home',
+                    'portoHeader' : 'Project',
+                    'dropdownItem1': 'Patient Questionnaire',
+                    'contactHeader' : 'Contact',
+                    'aboutHeader' : 'About',
+                    'greeting': '| Hello |',
+                    'me' : "I'm",
+                    'welcome': '<em>"Welcome to my paradise. Where this sky so blue..."</em> (ekhm) Sorry.<br>I am a medical record student graduate from STIKES Bhakti Husada Mulia Madiun, with a keen interest in the field of Information Technology and Communication, particularly in web development, cloud computing, data analysis, etc.<br>And of course loving on you too.',
+                    'sosmed': 'Get in touch :',
+                    'getInTouch': 'Get in touch :',
+                    'aboutMe' : 'About Me',
+                    'name' : 'Name',
+                    'placeBirth' : 'Place of Birth',
+                    'email' : 'Email',
+                    'number' : 'Phone Number'
+                }
+            };
+            
+            document.getElementById('homeHeader').innerText = langElements[lang]['homeHeader'];
+            document.getElementById('portoHeader').innerText = langElements[lang]['portoHeader'];
+            document.getElementById('contactHeader').innerText = langElements[lang]['contactHeader'];
+            document.getElementById('aboutHeader').innerText = langElements[lang]['aboutHeader'];
+            document.getElementById('greeting').innerText = langElements[lang]['greeting'];
+            document.getElementById('me').innerHTML = langElements[lang]['me'];
+            document.getElementById('welcome').innerHTML = langElements[lang]['welcome'];
+            document.getElementById('sosmed').getElementsByTagName('h3')[0].innerText = langElements[lang]['sosmed'];
+            document.getElementById('sosmed').getElementsByTagName('li')[0].getElementsByTagName('a')[0].getElementsByTagName('img')[0].alt = langElements[lang]['getInTouch'];
+            document.getElementById('aboutMe').innerText = langElements[lang]['aboutMe'];
+            document.getElementById('name').innerText = langElements[lang]['name'];
+            document.getElementById('placeBirth').innerText = langElements[lang]['placeBirth'];
+            document.getElementById('email').innerText = langElements[lang]['email'];
+            document.getElementById('number').innerText = langElements[lang]['number'];
+            document.getElementById('portoHeader').getElementsByTagName('a')[0].getElementsByTagName('ul')[0].getElementsByTagName('li')[0].innerText = langElements[lang]['portoHeader'];
+            document.getElementById('projectDropdown').getElementsByTagName('option')[0].innerText = langElements[lang]['patientQuestionnaire'];
+            document.getElementById('dropdownItem1').innerHTML = langElements[lang]['dropdownItem1'];
+        }
+        
+    </script>
+    
+
     <footer>
         <p><a href="https://github.com/irsdr/irsdr.github.io/blob/f74ad806247963a4920f77fff53869aae0019ee2/LICENSE" target="_blank" style="text-decoration: none; color: #f8f8f8;">MIT License - Copyright (c) 2023 Muh. Irsyad Asrori</a></p>
     </footer>
